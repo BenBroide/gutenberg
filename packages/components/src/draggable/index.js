@@ -49,7 +49,7 @@ export default function Draggable( {
 	function start( event ) {
 		const { ownerDocument } = event.target;
 
-		event.dataTransfer.setData( 'text', JSON.stringify( transferData ) );
+		event.dataTransfer.setData( 'draggableOptions', JSON.stringify( transferData ) );
 
 		const cloneWrapper = ownerDocument.createElement( 'div' );
 		const dragImage = ownerDocument.createElement( 'div' );

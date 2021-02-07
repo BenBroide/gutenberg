@@ -33,7 +33,7 @@ export function parseDropEvent( event ) {
 	try {
 		result = Object.assign(
 			result,
-			JSON.parse( event.dataTransfer.getData( 'text' ) )
+			JSON.parse( event.dataTransfer.getData( 'draggableOptions' ) )
 		);
 	} catch ( err ) {
 		return result;
